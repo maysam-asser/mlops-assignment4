@@ -23,7 +23,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Linter Check
-        run: echo "Running linter check"
+        run: flake8 .
 
       - name: Model Dry Test
         run: |
